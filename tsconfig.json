@@ -1,0 +1,17 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es5",
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "removeComments": true,
+    "sourceMap": true,
+    "outDir": "dist"
+  }
+}
