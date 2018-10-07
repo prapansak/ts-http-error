@@ -1,6 +1,6 @@
 {
   "name": "ts-http-error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom http error",
   "license": "MIT",
   "main": "dist/index.js",
@@ -14,8 +14,8 @@
     "build": "rollup -c"
   },
   "repository": {
-    "type" : "git",
-    "url" : "git+https://github.com/prapansak/ts-http-error.git"
+    "type": "git",
+    "url": "git+https://github.com/prapansak/ts-http-error.git"
   },
   "keywords": [
     "ts-http-error"
