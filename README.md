@@ -5,22 +5,22 @@
 Custom HTTP error for typescript
 
 # Install
-```
+```sh
 npm install --save ts-http-error
 ```
 or
-```
+```sh
 yarn add ts-http-error
 ```
 
 # Usage
-```
+```typescript
 import { BadRequest } from 'ts-http-error'
 ```
 
 # Example
 ### Error.ts
-```
+```typescript
 import { BadRequest } from 'ts-http-error'
 
 export default const error = {
@@ -30,7 +30,7 @@ export default const error = {
 ```
 
 ### ProductService.ts
-```
+```typescript
 export default class ProductService {
   public getProduct(id: string) {
     try {
