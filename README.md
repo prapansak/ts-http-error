@@ -22,9 +22,9 @@ import { BadRequest } from 'ts-http-error'
 ```typescript
 import { BadRequest } from 'ts-http-error'
 
-export default const error = {
-  ProductNotFound = BadRequest(1000, 'Product not found'),
-  UnableGetProduct = BadRequest(1001, 'Unable get product')
+export default {
+  ProductNotFound : BadRequest(1000, 'Product not found'),
+  UnableGetProduct: BadRequest(1001, 'Unable get product')
 }
 ```
 
