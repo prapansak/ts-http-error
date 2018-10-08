@@ -1,16 +1,16 @@
 {
   "name": "ts-http-error",
   "version": "1.0.2",
-  "description": "Custom http error",
+  "description": "Custom HTTP error for typescript",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "types": "dist/types/index.d.ts",
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "types": "lib/types/index.d.ts",
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
-    "prebuild": "rm -rf dist",
+    "prebuild": "rm -rf lib",
     "build": "rollup -c"
   },
   "repository": {

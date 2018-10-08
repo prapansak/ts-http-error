@@ -1,31 +1,30 @@
-[![npm](https://img.shields.io/npm/v/ts-http-error.svg)](https://www.npmjs.com/package/ts-http-error)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
 # ts-http-error
 Custom HTTP error for typescript
 
-# Install
+## Install
 ```sh
-npm install --save ts-http-error
+npm install https://github.com/prapansak/ts-http-error.git
 ```
 or
 ```sh
-yarn add ts-http-error
+yarn add https://github.com/prapansak/ts-http-error.git
 ```
 
-# Usage
+## Usage
 ```typescript
 import { BadRequest } from 'ts-http-error'
 ```
 
-# Example
+## Example
 ### Error.ts
 ```typescript
 import { BadRequest } from 'ts-http-error'
 
 export default const error = {
-  GET_PRODUCT_ERROR = BadRequest(1000, 'Get product error'),
-  GET_PRODUCTS_ERROR = BadRequest(1001, 'Get products error')
+  ProductNotFound = BadRequest(1000, 'Product not found'),
+  UnableGetProduct = BadRequest(1001, 'Unable get product')
 }
 ```
 
@@ -34,23 +33,23 @@ export default const error = {
 export default class ProductService {
   public getProduct(id: string) {
     try {
-      ...do stuff
+      // do stuff
     } catch (e) {
-      throw error.GET_PRODUCT_ERROR
+      throw error.ProductNotFound
     }
   }
 
   public getProducts() {
     try {
-      ...do stuff
+      // do stuff
     } catch (e) {
-      throw error.GET_PRODUCTS_ERROR
+      throw error.UnableGetProduct
     }
   }
 }
 ```
 
-# Contributing
+## Contributing
 1. Fork this repository.
 2. Create new branch with feature name.
 3. Run `npm install` or `yarn`
@@ -59,7 +58,7 @@ export default class ProductService {
 5. Push your code to your fork repository.
 6. Create pull request.
 
-# Licence
+## Licence
 [MIT](LICENCE)
 
 Made with love

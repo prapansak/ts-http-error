@@ -9,9 +9,9 @@
     "noImplicitAny": true,
     "target": "es5",
     "declaration": true,
-    "declarationDir": "dist/types",
+    "declarationDir": "lib/types",
     "removeComments": true,
     "sourceMap": true,
-    "outDir": "dist"
+    "outDir": "lib"
   }
 }
