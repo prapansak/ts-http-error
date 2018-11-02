@@ -41,6 +41,7 @@ export enum HTTP_STATUS_CODE {
   LOOP_DETECTED = 508,
   NOT_EXTENDED = 510,
   NETWORK_AUTHENTICATION_REQUIRED = 511,
+  UNKNOWN_ERROR = 520,
 }
 
 export default interface IHttpError extends Error {

@@ -351,3 +351,12 @@ export function NotExtended(code: string | number, message: string) {
 export function NetworkAuthenticationRequired(code: string | number, message: string) {
   return new HttpError(code, message, HTTP_STATUS_CODE.NETWORK_AUTHENTICATION_REQUIRED)
 }
+
+/**
+ * Status 520
+ * @param code
+ * @param message
+ */
+export function UnknownError(code: string | number, message: string) {
+  return new HttpError(code, message, HTTP_STATUS_CODE.UNKNOWN_ERROR)
+}

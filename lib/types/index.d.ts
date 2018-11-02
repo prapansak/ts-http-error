@@ -38,3 +38,4 @@ export declare function InsufficientStorage(code: string | number, message: stri
 export declare function LoopDetected(code: string | number, message: string): HttpError;
 export declare function NotExtended(code: string | number, message: string): HttpError;
 export declare function NetworkAuthenticationRequired(code: string | number, message: string): HttpError;
+export declare function UnknownError(code: string | number, message: string): HttpError;
