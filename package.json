@@ -1,6 +1,6 @@
 {
   "name": "ts-http-error",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Custom HTTP error for typescript",
   "license": "MIT",
   "main": "lib/index.js",
